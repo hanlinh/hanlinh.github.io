@@ -1,0 +1,100 @@
+.main_wrapper img{
+  padding-top: 1%;
+  width:5%;
+  align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_wrapper {
+  text-align: center;
+  padding-top: 1%;
+  background-color: rgba(242, 242, 242,1.00);
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  min-height: 125vh;
+  margin: 0 auto;
+}
+
+.quick_links  {
+  list-style-type: none;
+  font-size: 14px;
+  display: inline;
+  font-family: 'Playfair Display', serif;
+}
+.quick_links li {
+  display: inline-block;
+}
+.quick_links p {
+  color: rgba(255, 0, 0, 0.0);
+  transition: transform 250ms;
+}
+.quick_links img {
+  width: 25%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  color: white;
+  position: center;
+  transition: transform 400ms;
+}
+.quick_links .ql_home:hover p, .quick_links .ql_posts:hover p, .quick_links .ql_links:hover p, .quick_links .ql_archives:hover p, .quick_links .ql_ac:hover p {
+  position: center;
+  color: black;
+  float:none;
+  transform: scale(1.4);
+  z-index: 1;
+}
+.quick_links .ql_home:hover img, .quick_links .ql_posts:hover img, .quick_links .ql_links:hover img, .quick_links .ql_archives:hover img, .quick_links .ql_ac:hover img {
+  position: center;
+  float:none;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 300%;
+  text-decoration: none;
+  background-color: rgba(222, 232, 233,1.00);
+  width: 100%;
+  padding-bottom: 3.5%;
+  padding-top: 3.5%;
+  overflow: visible;
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.end {
+  font-weight: 300;
+  color: rgba(255, 255, 255,1.00);
+  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  background-color: rgba( 45, 58, 76, 1.00);
+  position: center;
+  width: 100%;
+  left: 0%;
+  bottom: 0%;
+  overflow: hidden;
+  position: absolute;
+}
+.end hr {
+  width: 25%;
+}
+.Attribution, .att_flaticon a {
+  color: rgba(255, 255, 255,1.00);
+  text-decoration: none;
+}
+
+.att_flaticon ul {
+  font-size: 80%;
+  color: rgba(255, 255, 255,1.00);
+  text-decoration: none;
+  width:25%;
+  align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
