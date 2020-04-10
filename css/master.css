@@ -1,11 +1,11 @@
 .main_wrapper img{
   padding-top: 1%;
   width:5%;
-  align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
-
+html, body {
+  height: 170%;
+  scroll-behavior: smooth;
+}
 .main_wrapper {
   text-align: center;
   padding-top: 1%;
@@ -14,6 +14,10 @@
   position: relative;
   min-height: 125vh;
   margin: 0 auto;
+  -ms-overflow-style: none;
+}
+.main_wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .quick_links  {
@@ -29,11 +33,14 @@
   color: rgba(255, 0, 0, 0.0);
   transition: transform 250ms;
 }
+ul{
+  padding-inline-start: 0px;
+}
 .quick_links img {
   width: 25%;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   color: white;
   position: center;
   transition: transform 400ms;
@@ -52,20 +59,141 @@
   z-index: 1;
 }
 
+.content {
+
+}
 .content h1 {
   font-family: 'Playfair Display', serif;
   font-size: 300%;
   text-decoration: none;
-  background-color: rgba(222, 232, 233,1.00);
-  width: 100%;
-  padding-bottom: 3.5%;
-  padding-top: 3.5%;
+  width: 100;
+  padding-top: 1.5%;
   overflow: visible;
   position: center;
   margin-left: auto;
   margin-right: auto;
 }
+#index_title {
+  font-size: 400%;
+}
+.index {
+  background-color: rgba(222, 232, 233,1.00);
+  width: 100;
+  padding-top: 3.5%;
+  padding-bottom: 2%;
+  overflow: visible;
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index2 {
+  padding-top: 3.5%;
+  padding-bottom: 2%;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("/images/otter.jpg");
+}
+.arrow {
+  padding-top: 20%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+}
 
+.construct a {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: black;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  right:48.7%;
+}
+.construct a:hover {
+  opacity: .5;
+}
+
+#section07 a {
+  padding-top: 80px;
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#site_info {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 300%;
+}
 
 .end {
   font-weight: 300;
@@ -82,7 +210,9 @@
   position: absolute;
 }
 .end hr {
-  width: 25%;
+  width: 23%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Attribution, .att_flaticon a {
   color: rgba(255, 255, 255,1.00);
