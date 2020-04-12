@@ -2,9 +2,12 @@
   padding-top: 1%;
   width:5%;
 }
-html, body {
-  height: 100%;
+html {
+  height: 150%;
   scroll-behavior: smooth;
+}
+body {
+  height: 150%;
 }
 .main_wrapper {
   text-align: center;
@@ -19,7 +22,6 @@ html, body {
 .main_wrapper::-webkit-scrollbar {
     display: none;
 }
-
 .quick_links  {
   list-style-type: none;
   font-size: 14px;
@@ -60,20 +62,34 @@ ul{
 }
 
 .content {
-
-}
-.content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 300%;
-  text-decoration: none;
-  width: 100;
-  padding-top: 1.5%;
-  overflow: visible;
-  position: center;
+  width: 80%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align: center;
   margin-left: auto;
   margin-right: auto;
 }
+.content h1 {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+.about {
+  float:left;
+  font-size: 250%;
+  width: 50%;
+}
+.contact {
+  float:right;
+  font-size: 250%;
+  width: 50%;
+}
 
+.content p, .about p, .contact p {
+  font-size: 70%;
+
+}
 .end {
   font-weight: 300;
   color: rgba(255, 255, 255,1.00);
@@ -97,7 +113,6 @@ ul{
   color: rgba(255, 255, 255,1.00);
   text-decoration: none;
 }
-
 .att_flaticon ul {
   font-size: 80%;
   color: rgba(255, 255, 255,1.00);
